@@ -1,0 +1,38 @@
+source ~/.vimrc
+
+" Build & Run
+nnoremap <Leader>rr :action Run<CR>
+nnoremap <Leader>clean :action CleanGradleProject<CR>
+nnoremap <Leader>sync :action Android.SyncProject<CR>
+
+" Debug
+nnoremap <Leader>dd :action Debug<CR>
+nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
+
+" Tab
+nnoremap <Leader>only :action CloseAllEditorsButActive<CR>
+nnoremap <Leader>clear :action CloseAllEditors<CR>
+
+" Window
+nnoremap <Leader>sp :action SplitVertically<CR>
+nnoremap <Leader>hsp :action SplitHorizontally<CR>
+nnoremap <Leader>vsp :action SplitVertically<CR>
+
+" Git
+nnoremap <Leader>gh :action LocalHistory.ShowHistory<CR>
+
+" Refactor
+nnoremap <Leader>R :action Refactorings.QuickListPopupAction<CR>
+nnoremap <Leader>ll :action ReformatCode<CR>
+nnoremap <Leader>rn :action RenameElement<CR>
+nnoremap <Leader>rf :action RenameFile<CR>
+nnoremap <Leader>em :action ExtractMethod<CR>
+nnoremap <Leader>ev :action IntroduceVariable<CR>
+nnoremap <Leader>es :action ExtractSuperclass<CR>
+nnoremap <Leader>I :action Inline<CR>
+nnoremap [e :action GotoNextError<CR>
+nnoremap ]e :action GotoPreviousError<CR>
+
+" Tool
+nnoremap <Leader>ga :action GotoAction<CR>
+nnoremap <Leader>sh :action ActivateTerminalToolWindow<CR>
