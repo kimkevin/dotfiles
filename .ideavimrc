@@ -1,38 +1,44 @@
 source ~/.vimrc
 
+" Reload
+nnoremap <leader>re :source ~/.ideavimrc<cr>
+
 " Build & Run
-nnoremap <Leader>rr :action Run<CR>
-nnoremap <Leader>clean :action CleanGradleProject<CR>
-nnoremap <Leader>sync :action Android.SyncProject<CR>
+nnoremap <leader>rr :action Run<cr>
+nnoremap <leader>cc :action CleanGradleProject<cr>
+nnoremap <leader>ss :action Android.SyncProject<cr>
 
 " Debug
-nnoremap <Leader>dd :action Debug<CR>
-nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
-
-" Tab
-nnoremap <Leader>only :action CloseAllEditorsButActive<CR>
-nnoremap <Leader>clear :action CloseAllEditors<CR>
+nnoremap <leader>dd :action Debug<cr>
+nnoremap <leader>bb :action ToggleLineBreakpoint<cr>
+nnoremap <leader>only :action CloseAllEditorsButActive<cr>
+nnoremap <leader>clear :action CloseAllEditors<cr>
 
 " Window
-nnoremap <Leader>sp :action SplitVertically<CR>
-nnoremap <Leader>hsp :action SplitHorizontally<CR>
-nnoremap <Leader>vsp :action SplitVertically<CR>
+nnoremap <leader>sp :action SplitVertically<cr>
+nnoremap <leader>hsp :action SplitHorizontally<cr>
+nnoremap <leader>vsp :action SplitVertically<cr>
 
 " Git
-nnoremap <Leader>gh :action LocalHistory.ShowHistory<CR>
+nnoremap <leader>gh :action LocalHistory.ShowHistory<cr>
 
 " Refactor
-nnoremap <Leader>R :action Refactorings.QuickListPopupAction<CR>
-nnoremap <Leader>ll :action ReformatCode<CR>
-nnoremap <Leader>rn :action RenameElement<CR>
-nnoremap <Leader>rf :action RenameFile<CR>
-nnoremap <Leader>em :action ExtractMethod<CR>
-nnoremap <Leader>ev :action IntroduceVariable<CR>
-nnoremap <Leader>es :action ExtractSuperclass<CR>
-nnoremap <Leader>I :action Inline<CR>
-nnoremap [e :action GotoNextError<CR>
-nnoremap ]e :action GotoPreviousError<CR>
+nnoremap <leader>R :action Refactorings.QuickListPopupAction<cr>
+nnoremap <leader>L :action ReformatCode<cr>
+nnoremap <leader>ic :action InspectCode<cr>
+nnoremap <leader>rm :action ExtractMethod<cr>
+nnoremap <leader>rn :action RenameElement<cr>
+nnoremap <leader>rf :action RenameFile<cr>
+nnoremap <leader>rv :action IntroduceVariable<cr>
+nnoremap <leader>rs :action ExtractSuperclass<cr>
+nnoremap <leader>ri :action Inline<cr>
+nnoremap [e :action GotoNextError<cr>
+nnoremap ]e :action GotoPreviousError<cr>
 
 " Tool
-nnoremap <Leader>ga :action GotoAction<CR>
-nnoremap <Leader>sh :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>fp :action FindInPath<cr>
+nnoremap <leader>fu :action FindUsages<cr>
+nnoremap <leader>su :action ShowUsages<cr>
+nnoremap <leader>ga :action GotoAction<cr>
+nnoremap <leader>lc :action ActivateLogcatToolWindow<cr>
+nnoremap <leader>sh :action ActivateTerminalToolWindow<cr>
