@@ -32,8 +32,6 @@ nnoremap <leader>rf :action RenameFile<cr>
 nnoremap <leader>rv :action IntroduceVariable<cr>
 nnoremap <leader>rs :action ExtractSuperclass<cr>
 nnoremap <leader>ri :action Inline<cr>
-nnoremap [e :action GotoNextError<cr>
-nnoremap ]e :action GotoPreviousError<cr>
 
 " Tool
 nnoremap <leader>fp :action FindInPath<cr>
@@ -42,3 +40,5 @@ nnoremap <leader>su :action ShowUsages<cr>
 nnoremap <leader>ga :action GotoAction<cr>
 nnoremap <leader>lc :action ActivateLogcatToolWindow<cr>
 nnoremap <leader>sh :action ActivateTerminalToolWindow<cr>
+nnoremap [e :action GotoNextError<cr>
+nnoremap ]e :action GotoPreviousError<cr>
